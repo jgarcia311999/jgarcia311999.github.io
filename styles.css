@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #000814, #001d49);
+    background: linear-gradient(to bottom, #001d49, #3c8af8);
 }
 
 header {
@@ -53,7 +53,7 @@ h2 {
 
 .card {
     text-align: left;
-    background-color: #001d3d !important;
+    background-color: #032f72 !important;
     border-radius: 15px;
     border-color: #ffffff !important;
 }
@@ -360,4 +360,61 @@ body.modal-open {
     text-align: left;
     margin-left: 3px;
     margin-bottom: 3px;
+}
+
+/* toogle */
+
+.checkbox {
+    width: 223px;
+    height: 60px;
+    background-color: #758faa;
+    border-radius: 30px;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.checkbox .toggle {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    left: 5px;
+    cursor: pointer;
+    background: linear-gradient(40deg, #021b34, #094c76 70%);
+    transition: 0.4s;
+    box-shadow: 0px 0px 3px #d4af37, 0px 0px 5px #d4af37;
+}
+
+.checkbox .slide {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.checkbox .slide .text {
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.check:checked+.checkbox .slide .toggle {
+    transform: translateX(113px);
+    background: linear-gradient(40deg, #094c76, #021b34 70%);
+    box-shadow: -0px -0px 10px #232d2e, -0px -0px 3px #232d2e;
+}
+
+.check:checked+.checkbox .slide {
+    background-color: #758faa;
+    color: #fff;
 }
