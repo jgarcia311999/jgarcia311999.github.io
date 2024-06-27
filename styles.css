@@ -1,0 +1,363 @@
+body {
+    background: linear-gradient(to bottom, #000814, #001d49);
+}
+
+header {
+    background-color: transparent;
+}
+
+#navbarHam {
+    border-color: white;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+.link {
+    color: white !important;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.jumbotron {
+    margin-top: -30px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.btn-outline-warning {
+    margin-top: 20px;
+}
+
+.modal-title {
+    color: white;
+}
+
+.card {
+    text-align: left;
+    background-color: #001d3d !important;
+    border-radius: 15px;
+    border-color: #ffffff !important;
+}
+
+.card-subtitle {
+    color: white;
+}
+
+.card-body,
+.card-title,
+.card-text,
+.text-center {
+    color: #ffffff !important;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.card-img-top {
+    margin: 20px;
+    height: 200px;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center-card {
+    text-align: center;
+}
+
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.carousel-img {
+    width: 300px;
+    height: 300px;
+}
+
+#miModal {
+    background-color: transparent;
+}
+
+footer {
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    border-top: 2px solid white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #001d3d;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-card-header {
+    background-color: #415a77;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+
+.contact-card-body {
+    padding: 20px;
+}
+
+#myCarousel {
+    align-items: center;
+}
+
+label {
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #000814, #01337f);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #000814, #001d49);
+}
+
+.modal-xl {
+    max-width: 95%;
+    width: 95%;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.modal-body {
+    padding: 0;
+    height: calc(80vh - 60px);
+    overflow: hidden;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.separador-blanco {
+    border: 1;
+    height: 4px;
+    /* Puedes ajustar el grosor de la línea */
+    background: rgb(255, 255, 255);
+    width: 100%;
+    margin: 20px 0;
+    /* Ajusta los márgenes según tus necesidades */
+}
+
+/* CARDS PROYECTOS */
+
+.card-proj {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    background-color: #001d3d !important;
+        border-radius: 10px;
+    box-shadow: -1rem 0 3rem #00000044;
+    margin-left: -80px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    border: 2px solid #ffffff;
+    /* Añade esta línea para el borde de color */
+    margin-top: 5vh;
+}
+
+.card-proj:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card-proj:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    text-shadow: 2px 2px 8px #6e5b94;
+}
+
+.card-proj:hover~.card-proj {
+    position: relative;
+    left: 50px;
+    transform: rotateX(-15deg) rotateY(10deg);
+    transition: 0.4s ease-out;
+}
+
+.title-1-proj {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.btn-proj {
+    position: absolute;
+    top: 195px;
+    margin: 0 20px;
+    width: 120px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4a2f7c;
+    color: #fff;
+    transition: 0.4s ease-out;
+}
+
+.btn-proj:hover {
+    transition: 0.4s ease-out;
+    background-color: #8a4ff8;
+    color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(157, 71, 255, 0.5),
+        0px 5px 5px -1px rgba(163, 58, 233, 0.25),
+        inset 4px 4px 8px rgba(219, 175, 255, 0.5),
+        inset -4px -4px 8px rgba(137, 19, 216, 0.35);
+}
+
+.bar-proj {
+    position: relative;
+    top: 250px;
+    height: 5px;
+    width: 100%;
+}
+
+.emptybar-proj {
+    background-color: #201c29;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar-proj {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #d059ff;
+    background: linear-gradient(90deg, #6831cfab, #a777ff 100%);
+    transition: 0.6s ease-out;
+}
+
+.card-proj:hover .filledbar-proj {
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.content-proj {
+    position: absolute;
+    padding: 20px;
+    top: 60px;
+    color: #eae0fd;
+    font-size: 0.7rem;
+}
+
+.stroke-proj {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+.card-proj:hover .stroke-proj {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+/* Segunda parte de las cards */
+
+/* Nueva barra de progreso */
+.progress-bar {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    /* Cambia este valor para ajustar el progreso */
+    height: 4px !important;
+    background-color: #ffffff !important;
+}
+
+.progress-text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
