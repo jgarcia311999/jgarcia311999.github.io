@@ -175,12 +175,12 @@ label {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #000814, #01337f);
+    background: linear-gradient(to bottom, #001d49, #3c8af8);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, #000814, #001d49);
+    background: linear-gradient(to bottom, #001d49, #3c8af8);
 }
 
 .modal-xl {
@@ -225,8 +225,8 @@ body.modal-open {
     display: flex;
     height: 400px;
     width: 300px;
-    background-color: #001d3d !important;
-        border-radius: 10px;
+    background-color: #032f72 !important;
+    border-radius: 10px;
     box-shadow: -1rem 0 3rem #00000044;
     margin-left: -80px;
     transition: 0.4s ease-out;
@@ -387,7 +387,7 @@ body.modal-open {
     border-radius: 30px;
     left: 5px;
     cursor: pointer;
-    background: linear-gradient(40deg, #021b34, #094c76 70%);
+    background: linear-gradient(40deg, #3c8af8, #094c76 70%);
     transition: 0.4s;
     box-shadow: 0px 0px 3px #d4af37, 0px 0px 5px #d4af37;
 }
@@ -410,7 +410,7 @@ body.modal-open {
 
 .check:checked+.checkbox .slide .toggle {
     transform: translateX(113px);
-    background: linear-gradient(40deg, #094c76, #021b34 70%);
+    background: linear-gradient(40deg, #094c76, #3c8af8 70%);
     box-shadow: -0px -0px 10px #232d2e, -0px -0px 3px #232d2e;
 }
 
