@@ -229,6 +229,10 @@ body.modal-open {
 
 /* CARDS PROYECTOS */
 
+.card-hidden {
+    display: none;
+}
+
 .card-proj {
     display: flex;
     height: 400px;
@@ -506,4 +510,321 @@ body.modal-open {
 
 .color-preview-1 {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Cards mobile */
+
+/* .scroll-1_proj_mb::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll-1_proj_mb::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #888;
+}
+
+.container_proj_mb * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container_proj_mb {
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 300px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.container_proj_mb .card_proj_mb {
+    flex: 0 0 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #141414;
+    scroll-snap-align: start;
+}
+
+.card_proj_mb .card__image_proj_mb {
+    flex: 1;
+    height: 140px;
+}
+
+.card_proj_mb:nth-child(1) .card__image_proj_mb {
+    background-image: linear-gradient(to right top,
+            #051937,
+            #004d7a,
+            #008793,
+            #00bf72,
+            #a8eb12);
+}
+
+.card_proj_mb:nth-child(2) .card__image_proj_mb {
+    background-image: linear-gradient(to right top,
+            #dc09a5,
+            #ce00b4,
+            #ba00c5,
+            #9c00d8,
+            #6f12eb);
+}
+
+.card_proj_mb:nth-child(3) .card__image_proj_mb {
+    background-image: linear-gradient(to right top,
+            #dc1009,
+            #e55f00,
+            #e49200,
+            #dac000,
+            #c7eb12);
+}
+
+.card_proj_mb .card__content_proj_mb {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card_proj_mb .card__content_proj_mb .card__title_proj_mb {
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.card_proj_mb .card__content_proj_mb .card__describe_proj_mb {
+    color: #fff;
+    font-size: 16px;
+} */
+
+
+/* Color 1 */
+
+.card-color-1 {
+    width: 400px;
+    height: 350px;
+    --black: #000000;
+    --ch-black: #A8A8A8;
+    --eer-black: #545454;
+    --night-rider: #FA8F42;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    font-family: Helvetica, sans-serif;
+}
+
+.wrapper-color-1 {
+    margin-top: 2rem;
+    width: 250px;
+    font-size: small;
+}
+
+.title-color-1 {
+    text-align: center;
+    color: #1b1b1b;
+}
+
+.heading-color-1 {
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.heading-color-1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #e8e8e8;
+    z-index: -1;
+    filter: blur(50px);
+    height: 50px;
+}
+
+.color-color-1 {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hex-color-1 {
+    text-align: end;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.black-color-1 {
+    background: var(--black);
+    color: var(--ch-white);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.eerie-black-color-1 {
+    background: var(--ch-black);
+    color: var(--ch-white);
+}
+
+.chinese-black-color-1 {
+    background: var(--eer-black);
+    color: var(--ch-white);
+}
+
+.night-rider-color-1 {
+    background: var(--night-rider);
+    color: var(--ch-white);
+}
+
+.chinese-white-color-1 {
+    background: var(--ch-white);
+    color: var(--night-rider);
+}
+
+.anti-flash-white-color-1 {
+    background: var(--af-white);
+    color: var(--night-rider);
+}
+
+.white-color-1 {
+    background: var(--white);
+    color: var(--night-rider);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.border-color-1 {
+    color: var(--night-rider);
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.border-color-1 span {
+    border-radius: 5px;
+    color: var(--ch-white);
+    padding: 2px 4px;
+    background-color: var(--night-rider);
+}
+
+/* Skill 1 */
+
+.container-skills-1 {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #ececec00;
+    border-radius: 7px;
+    user-select: none;
+}
+
+.container-skills-1 .skill-box-skills-1 {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box-skills-1 .title-skills-1 {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: start;
+}
+
+.skill-box-skills-1 .skill-bar-skills-1 {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar-skills-1 .skill-per-skills-1 {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #000000;
+    animation: progress-skills-1 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per-skills-1.TypeScript-skills-1 {
+    /*progreso de los diferentes lenguajes*/
+    width: 52%;
+    animation-delay: 0.1s;
+}
+
+.skill-per-skills-1.SCSS-skills-1 {
+    /*progreso de los diferentes lenguajes*/
+    width: 25%;
+    animation-delay: 0.1s;
+}
+
+.skill-per-skills-1.HTML-skills-1 {
+    /*progreso de los diferentes lenguajes*/
+    width: 22%;
+    animation-delay: 0.2s;
+}
+
+@keyframes progress-skills-1 {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per-skills-1 .tooltip-skills-1 {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #000000;
+
+    z-index: 1;
+}
+
+.tooltip-skills-1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background: #000000;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+/* video casaleo */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    /* Ajusta esto al tamaño deseado */
+    padding-top: 177.78%;
+    /* Relación de aspecto 9:16 (vertical) */
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
