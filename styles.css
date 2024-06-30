@@ -700,24 +700,202 @@ body.modal-open {
     transform: translateX(-50%) rotate(45deg);
 }
 
+/* Skill 2 */
+
+.container-skills-2 {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #ececec00;
+    border-radius: 7px;
+    user-select: none;
+}
+
+.container-skills-2 .skill-box-skills-2 {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box-skills-2 .title-skills-2 {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: start;
+}
+
+.skill-box-skills-2 .skill-bar-skills-2 {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar-skills-2 .skill-per-skills-2 {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #000000;
+    animation: progress-skills-2 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per-skills-2.TypeScript-skills-2 {
+    /*progreso de los diferentes lenguajes*/
+    width: 25%;
+    animation-delay: 0.1s;
+}
+
+.skill-per-skills-2.CSS-skills-2 {
+    /*progreso de los diferentes lenguajes*/
+    width: 15%;
+    animation-delay: 0.1s;
+}
+
+.skill-per-skills-2.HTML-skills-2 {
+    /*progreso de los diferentes lenguajes*/
+    width: 47%;
+    animation-delay: 0.2s;
+}
+
+.skill-per-skills-2.PHP-skills-2 {
+    /*progreso de los diferentes lenguajes*/
+    width: 12%;
+    animation-delay: 0.2s;
+}
+
+@keyframes progress-skills-2 {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per-skills-2 .tooltip-skills-2 {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #000000;
+
+    z-index: 1;
+}
+
+.tooltip-skills-2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background: #000000;
+    transform: translateX(-50%) rotate(45deg);
+}
+
 /* video casaleo */
 
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 500px;
-    /* Ajusta esto al tamaño deseado */
-    padding-top: 177.78%;
-    /* Relación de aspecto 9:16 (vertical) */
+    max-width: 400px;
+    /* Ajusta el tamaño máximo según tus necesidades */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding-top: 88.89%;
+    /* Cambia esto para mantener la relación de aspecto deseada, 88.89% para 9:16 dividido por 2 */
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento */
+
 }
 
 .video-container iframe {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra el iframe horizontalmente */
+    width: auto;
     height: 100%;
+    border: 0;
+    border-radius: 25px;
+}
+
+/* Estilo adicional para asegurar la responsividad en dispositivos móviles */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        /* Asegura que el video ocupe todo el ancho disponible en móviles */
+        padding-top: 88.89%;
+        /* Mantiene el aspecto ajustado */
+    }
+}
+
+/* Carousel estimat */
+
+.scroll-1-estimat::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll-1-estimat::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #888;
+}
+
+.container-estimat * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container-estimat {
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-padding-top: 24px;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.container-estimat .card-estimat {
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-color: #14141400;
+    scroll-snap-align: start;
+}
+
+.card__image-estimat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    /* Ajustar la altura según sea necesario */
+    width: 600;
+    /* Ajustar el ancho según sea necesario */
+    background-color: #00000000;
+    overflow: hidden;
+}
+
+.card__image-estimat img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 8px;
 }
 
 /* card mob */
