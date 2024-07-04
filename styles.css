@@ -275,28 +275,6 @@ body.modal-open {
     top: 15px;
 }
 
-.btn-proj {
-    position: absolute;
-    top: 195px;
-    margin: 0 20px;
-    width: 120px;
-    height: 32px;
-    border-radius: 8px;
-    border: none;
-    background-color: #4a2f7c;
-    color: #fff;
-    transition: 0.4s ease-out;
-}
-
-.btn-proj:hover {
-    transition: 0.4s ease-out;
-    background-color: #8a4ff8;
-    color: #ffffff;
-    box-shadow: 0px 0px 20px rgba(157, 71, 255, 0.5),
-        0px 5px 5px -1px rgba(163, 58, 233, 0.25),
-        inset 4px 4px 8px rgba(219, 175, 255, 0.5),
-        inset -4px -4px 8px rgba(137, 19, 216, 0.35);
-}
 
 .bar-proj {
     position: relative;
@@ -900,41 +878,102 @@ body.modal-open {
 
 /* card mob */
 
-.radio-inputs-proj-mob {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 0.5rem;
-    background-color: #EEE;
-    box-sizing: border-box;
-    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
-    padding: 0.25rem;
-    width: 300px;
-    font-size: 14px;
-}
-
-.radio-inputs-proj-mob .radio-proj-mob {
-    flex: 1 1 auto;
-    text-align: center;
-}
-
-.radio-inputs-proj-mob .radio-proj-mob input {
+.radio-input-switch-mob input {
     display: none;
 }
 
-.radio-inputs-proj-mob .radio-proj-mob .name-proj-mob {
+.radio-input-switch-mob {
+    --container_width: 300px;
+    position: relative;
     display: flex;
-    cursor: pointer;
     align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: .5rem 0;
-    color: rgba(51, 65, 85, 1);
-    transition: all .15s ease-in-out;
+    margin: 2vh auto;
+    border-radius: 10px;
+    background-color: #6f6f6f79;
+    color: #000000 !important;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
 }
 
-.radio-inputs-proj-mob .radio-proj-mob input:checked+.name-proj-mob {
-    background-color: #fff;
+.radio-input-switch-mob label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+.selection-switch-mob {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 3);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+}
+
+.radio-input-switch-mob label:has(input:checked) {
+    color: #fff;
+}
+
+.radio-input-switch-mob label:has(input:checked)~.selection-switch-mob {
+    background-color: #3c8af8;
+    display: inline-block;
+}
+
+.radio-input-switch-mob label:nth-child(1):has(input:checked)~.selection-switch-mob {
+    transform: translateX(calc(var(--container_width) * 0/3));
+}
+
+.radio-input-switch-mob label:nth-child(2):has(input:checked)~.selection-switch-mob {
+    transform: translateX(calc(var(--container_width) * 1/3));
+}
+
+.radio-input-switch-mob label:nth-child(3):has(input:checked)~.selection-switch-mob {
+    transform: translateX(calc(var(--container_width) * 2/3));
+}
+
+/* btn guthub */
+
+.btn-github {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.179);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+}
+
+.btn-github:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+.btn-github svg {
+    transition: transform 0.5s;
+}
+
+.btn-github:hover svg {
+    transform: scale(0.9);
+    fill: #094c76;
 }
